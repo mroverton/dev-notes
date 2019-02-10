@@ -1,2 +1,1 @@
-# Welcome to Myron's Dev Notes
-
+# Welcome to my development Notes
