@@ -2,32 +2,26 @@
 
 require 'aws-sdk'
 require 'optparse' # command line option parser
-require 'ostruct'  # struct holding parsed options
-require 'pp'       # pretty printer
+require 'ostruct' # struct holding parsed options
+require 'pp' # pretty printer
 
 class MyClass
 
-    @options = nil
+    attr_accessor :options
 
-    class << self
-        attr_accessor :options
-    end
-
-    def self.parse(args)
-
-        _opts            = OpenStruct.new
-        _opts.ok         = false
-        _opts.quiet      = false
-        _opts.yes        = false
-        _opts.profile    = 'default'
-        _opts.region     = 'us-west-2'
+    def parse(args)
+        _opts = OpenStruct.new
+        _opts.ok = false
+        _opts.quiet = false
+        _opts.yes = false
+        _opts.profile = 'default'
+        _opts.region = 'us-west-2'
         _opts.operations = []
 
         opt_parser = OptionParser.new do |o|
-
-            o.banner  = 'Description'
+            o.banner = 'Description'
             o.separator ''
-            o.separator "Usage #{File.basename $0} [options]"
+            o.separator "Usage #{File.basename $PROGRAM_NAME} [options]"
             o.separator ''
             o.separator 'Specific options:'
 
@@ -49,7 +43,7 @@ class MyClass
                 _opts.quiet = bool
             end
 
-            o.on('-l', 'List') do |bool|
+            o.on('-l', '--list', 'List items') do |_bool|
                 _opts.operations << method(:do_list)
             end
 
@@ -61,15 +55,14 @@ class MyClass
 
             o.separator ''
             o.separator 'Examples:'
-            o.separator " #{File.basename $0} -l "
+            o.separator " #{File.basename $PROGRAM_NAME} -l "
             o.separator '      List all components'
             o.separator ''
-
         end
 
         opt_parser.parse!(args)
 
-        unless _opts.ok
+        if _opts.operations.empty?
             STDOUT.puts opt_parser
             puts _opts.to_yaml
             exit 0
@@ -79,14 +72,18 @@ class MyClass
         _opts
     end
 
-    def self.main(args)
+    def main(args)
         puts "args: #{args}"
-        self.options = parse args
-        puts "options: #{options.keys
+        self.options = parse(args)
+        puts "options: #{options.keys}"
         options.operations.each do |cmd|
-            cmd.call() if cmd
+            cmd&.call
         end
+    end
+
+    def do_list
+        p 'do list'
     end
 end
 
-Serverless.main ARGV
+MyClass.new.main ARGV
