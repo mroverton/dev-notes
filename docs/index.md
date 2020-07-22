@@ -10,9 +10,9 @@
 - [linux](/linux.md)
 - [networking](/net.md)
 - [server](/server.md)
-- [shell](/shell.md) - bash, ...
-- [ssh](/net-ssh.md) - bash, ...
-- [tools](/tools.md) - awk, git, ...
+- [shell](/shell.md) - bash, 
+- [ssh](/net-ssh.md) - bash, 
+- [tools](/tools.md) - awk, git, 
 - [web](/web.md)
 ---
 ## Coding
