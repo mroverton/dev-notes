@@ -13,19 +13,25 @@ layout: default
 - [life-cycle](https://www.terraform.io/docs/configuration/resources.html#lifecycle-lifecycle-customizations)
 - [AWS Instance](https://www.terraform.io/docs/providers/aws/r/instance.html)
 - [Examples from EKS](https://github.com/terraform-aws-modules/terraform-aws-eks/blob/master/workers.tf)
+
+# Samples
 ```
+alias tf=terraform
 terraform apply -input=false -auto-approve
 terraform taint -module=pruf_qa.host aws_instance.host
 tf show |grep -A2 'aws_iam_access_key.user_file_'
 terraform state rm module.EzFeedFeedWorker
 tf destroy -force -refresh=false # when bucket is already gone
 ```
+
 ## Create a graph with dot
 ```
 terraform graph | dot -Tpdf > tf-graph.pdf
 ```
+
 ## Debugging
 - [debugging](https://www.terraform.io/docs/internals/debugging.html)
+
 ```
 export TF_LOG=DEBUG
 ```

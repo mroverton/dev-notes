@@ -6,6 +6,9 @@ layout: default
 
 ---
 # Postgres Notes
+- <https://www.postgresql.org/>
+- <https://www.postgresql.org/docs/10/index.html>
+
 
 ## Start/Stop MacOS service
 ```

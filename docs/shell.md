@@ -2,6 +2,8 @@
 layout: default
 ---
 - [home](/index.md)
+
+# Shells
 - [bash](/shell-bash.md)
 
 ---

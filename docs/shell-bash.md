@@ -1,14 +1,17 @@
-- [home](/index.md)
 ---
 layout: default
 ---
+- [home](/index.md)
 - [alias](/shell-bash-alias.md)
 - [bashrc](/shell-bash-bashrc.md)
 
 ---
 # BASH Notes
+
+## Shared setup
+
 ```
-# sample shared .bashrc
+# sample shared .bashrc and aliases
 [ -e ~/.bash/bashrc ] && . ~/.bash/bashrc
 [ -e ~/.bash/aliases.sh ] && . ~/.bash/aliases.sh
 ```
@@ -18,12 +21,14 @@ layout: default
 #! /bin/bash -eu
 set -o pipefail
 ```
+
 ## Local Variables
 ```
 func() {
   local arg1="${1}"
   local x="${2%/}"
 ```
+
 ## Run command as user that does not have a shell
 ```
 su - -s /bin/bash tomcat8
@@ -31,7 +36,7 @@ su - -s /bin/bash tomcat8
 
 ## Lots of shell trickery
 
-https://github.com/nginxinc/docker-nginx/blob/master/generate-stackbrew-library.sh
+- <https://github.com/nginxinc/docker-nginx/blob/master/generate-stackbrew-library.sh>
 
 
 ## Array examples
@@ -81,6 +86,7 @@ function command () {
     return $code
 }
 ```
+
 ## Tests
 ```
 ./mro.2 a b c
@@ -91,6 +97,7 @@ command ./mro.2 a b c
 command ./mro.2 "a b" c
 command ./mro.2 a "b c"
 ```
+
 ## Option processing
 ```
 OPTIND=1
@@ -122,7 +129,7 @@ pwgen 50 1 -s > passphrase
 ruby -rsecurerandom -e 'puts SecureRandom.hex(32)'
 
 ```
-https://www.random.org/passwords/?num=2&len=20&format=html&rnd=new
+- <https://www.random.org/passwords/?num=2&len=20&format=html&rnd=new>
 
 ## Sequence
 ```
@@ -136,7 +143,7 @@ complete #list
 complete -F _asdf b # assign to function
 ```
 
-# load from tools like eksctl
+# load completion functions from tools like eksctl
 ```
 . <(eksctl completion bash)
 ```

@@ -5,7 +5,10 @@ layout: default
 - [cloud](/cloud.md)
 
 ---
-# Packer Sample
+# Packer 
+- <https://www.packer.io/docs>
+
+## Sample
 ```
 {
   "variables": {

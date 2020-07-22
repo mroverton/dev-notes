@@ -5,14 +5,10 @@ layout: default
 
 ---
 # Docker Notes
-
-https://docs.docker.com/
-
-https://docs.docker.com/reference/
-
-https://hub.docker.com/
-
-[[Docker-Compose]]
+- [Docker Compose Notes](/docker-compose.md)
+- <https://docs.docker.com/>
+- <https://docs.docker.com/reference/>
+- <https://hub.docker.com/>
 
 ## My Aliases
 ```

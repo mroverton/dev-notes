@@ -65,7 +65,7 @@ lsof -ni ':80'
 ```
 
 # Get my IP
-- http://checkip.amazonaws.com/
+- <http://checkip.amazonaws.com/>
 ```
 GETIPADDR="dig +short myip.opendns.com @resolver1.opendns.com"
 ```

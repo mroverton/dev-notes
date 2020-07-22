@@ -6,5 +6,7 @@ layout: default
 
 ---
 # NGINX
-- https://nginxconfig.io/ # configurator
-- https://www.digitalocean.com/community/tools/nginx
+
+## Configurators
+- <https://nginxconfig.io/>
+- <https://www.digitalocean.com/community/tools/nginx>

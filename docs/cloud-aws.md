@@ -77,9 +77,12 @@ journalctl -xu cloud-final -f
 
 # EKS
 ## aws-iam-authenicator
+
 - [aws-iam-authenticator](https://github.com/kubernetes-sigs/aws-iam-authenticator)
+
 ```
 aws eks get-token --cluster-name xxx
+
 
 # get kubeconfig
 aws --region us-west-2 eks update-kubeconfig --name clustername

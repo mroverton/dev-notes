@@ -6,6 +6,7 @@ layout: default
 
 ---
 # Mongo
+
 ```
 mongodump --db dname --out `date '+%Y-%m-%d-mongo-'``hostname`
 mongorestore --db dname --drop
@@ -21,4 +22,4 @@ mongodump --db dname --out $(date '+%Y-%m-%d-%H%M%S-dname')
 # restore
 mongorestore --db dname --drop
 mongo dname --eval 'db.systemProperties.update({"name" : "system-url"},{$set : {"value" : "https://host.com"}})'
-
+```

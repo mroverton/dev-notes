@@ -21,6 +21,7 @@ layout: default
 - [Date and Time](/code-date-and-time.md)
 
 ## GitHub
-- https://pages.github.com/
+- <https://pages.github.com/>
 - [MyGitHubPages](https://mroverton.github.io/dev-notes/index.html)
 - [GitHub Help](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
+- [Themes](https://github.com/pages-themes)
