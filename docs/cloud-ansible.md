@@ -1,5 +1,5 @@
-- [[home]]
-- [[cloud]]
+- [home](/)
+- [cloud](/cloud.md)
 ---
 # Ansible
 - https://docs.ansible.com/ansible/latest/index.html

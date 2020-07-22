@@ -1,5 +1,7 @@
-- [[HTML|web-html]]
-- [[JS|web-js]]
+- [home](/)
+- [web](/web.md)
+- [HTML](/web-html.md)
+- [JS](/web-js.md)
 ---
 - https://developer.mozilla.org/en-US/docs/Glossary/CSS
 - https://www.w3schools.com/css/default.asp

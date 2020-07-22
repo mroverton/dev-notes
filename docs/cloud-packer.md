@@ -1,5 +1,5 @@
-- [[home]]
-- [[cloud]]
+- [home](/)
+- [cloud](/cloud.md)
 ---
 ### Sample
 ```

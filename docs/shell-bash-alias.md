@@ -1,5 +1,6 @@
-- [[home]]
-- [[bash|shell-bash]]
+- [home](/)
+- [bash](/shell-bash.md)
+- [bashrc](/shell-bash-bashrc.md)
 ---
 ```
 alias ,,a='set-aws-creds.sh'

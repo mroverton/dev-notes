@@ -1,7 +1,7 @@
-
-- [[HTML|web-html]]
-- [[CSS|web-css]]
-- [[JS|web-js]]
+- [home](/)
+- [HTML](/web-html.md)
+- [CSS](/web-css.md)
+- [JS](/web-js.md)
 ---
 - https://developer.mozilla.org
 

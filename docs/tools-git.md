@@ -1,5 +1,5 @@
-- [[home]]
-- [[tools]]
+- [home](/)
+- [tools](/tools.md)
 ---
 # GIT Notes
 - https://git-scm.com/docs

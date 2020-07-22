@@ -1,4 +1,5 @@
-- [[lang]]
+- [home](/)
+- [lang](/lang.md)
 ---
 ## Rails
 - [[rails|lang-ruby-rails]]

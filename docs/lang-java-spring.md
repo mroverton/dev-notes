@@ -1,4 +1,5 @@
-- [[lang-java]]
+- [home](/)
+- [lang-java](/lang-java.md)
 ---
 # Spring notes
 - https://spring.io/

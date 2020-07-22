@@ -1,5 +1,5 @@
-- [[home]]
-- [[ssh|net-ssh]]
+- [home](/)
+- [ssh](/net-ssh.md)
 ---
 # Networking
 ```

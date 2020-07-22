@@ -1,4 +1,5 @@
-- [[web]]
+- [home](/)
+- [web](/web.md)
 ---
 # Chrome
 ```

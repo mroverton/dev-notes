@@ -1,3 +1,5 @@
+- [home](/)
+---
 # Date and Time Manipulation
 
 - Never forget there are two dates at all times!

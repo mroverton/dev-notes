@@ -1,4 +1,5 @@
-- [[tools]]
+- [home](/)
+- [tools](/tools.md)
 ---
 # Apache Benchmarking tool
 ```

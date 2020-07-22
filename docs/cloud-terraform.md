@@ -1,5 +1,5 @@
-- [[home]]
-- [[cloud]]
+- [home](/)
+- [cloud](/cloud.md)
 ---
 # Terraform
 - https://www.terraform.io/docs/index.html

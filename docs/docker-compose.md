@@ -1,4 +1,4 @@
-- [[docker]]
+- [docker](/docker.md)
 ---
 # Docker Compose Notes
 ```

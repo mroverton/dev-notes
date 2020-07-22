@@ -1,10 +1,11 @@
-- [[home]]
-- [[web]]
-- [[HTML|web-html]]
-- [[CSS|web-css]]
+- [home](/)
+- [web](/web.md)
+- [HTML](/web-html.md)
+- [CSS](/web-css.md)
+---
 ### Javascript
-- [[NodeJS|web-js-node]]
-- [[Angular|web-js-angular]]
+- [NodeJS](/web-js-node.md)
+- [Angular](/web-js-angular.md)
 ---
 
 - https://developer.mozilla.org/en-US/docs/Glossary/JavaScript

@@ -1,5 +1,5 @@
-- [[home]]
-- [[edit]]
+- [home](/)
+- [edit](/edit.md)
 ---
 # VI Notes
 

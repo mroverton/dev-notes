@@ -1,4 +1,4 @@
-[[db]]
+- [db](/db.md)
 ---
 ```
 mongodump --db dname --out `date '+%Y-%m-%d-mongo-'``hostname`

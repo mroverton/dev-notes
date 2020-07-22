@@ -1,5 +1,5 @@
-- [[home]]
-- [[tools]]
+- [home](/)
+- [tools](/tools.md)
 ---
 ```
 awk 'BEGIN { SUM = 0 } // { SUM += $2 } END { printf("%.2f\n",SUM / NR) }'

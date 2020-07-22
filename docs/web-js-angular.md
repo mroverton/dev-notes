@@ -1,6 +1,8 @@
-- [[home]]
-- [[web]]
-- [[js|web-js]]
+- [home](/)
+- [web](/web.md)
+- [HTML](/web-html.md)
+- [CSS](/web-css.md)
+- [JS](/web-js.md)
 ---
 ```
 npm i -g @angular/cli

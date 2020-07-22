@@ -1,5 +1,5 @@
-- [[home]]
-- [[server]]
+- [home](/)
+- [server](/server.md)
 ---
 # NGINX
 - https://nginxconfig.io/ # configurator

@@ -1,4 +1,4 @@
-[[db]]
+- [db](/db.md)
 ---
 
 # Postgres Notes

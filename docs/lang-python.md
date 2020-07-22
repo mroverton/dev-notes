@@ -1,5 +1,5 @@
-- [[home]]
-- [[lang]]
+- [home](/)
+- [lang](/lang.md)
 ---
 # Python Notes
 ## Docs

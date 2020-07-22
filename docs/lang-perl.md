@@ -1,5 +1,5 @@
-- [[home]]
-- [[lang]]
+- [home](/)
+- [lang](/lang.md)
 ---
 ## Practical Extraction and Reporting Language(PERL)
 ```

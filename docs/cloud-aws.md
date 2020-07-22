@@ -1,5 +1,5 @@
-- [[home]]
-- [[cloud]]
+- [home](/)
+- [cloud](/cloud.md)
 ---
 # AWS Notes
 - [SDKs](https://aws.amazon.com/getting-started/tools-sdks/)

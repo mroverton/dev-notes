@@ -1,6 +1,6 @@
-- [[home]]
-- [[alias|shell-bash-alias]]
-- [[bashrc|shell-bash-bashrc]]
+- [home](/)
+- [alias](/shell-bash-alias.md)
+- [bashrc](/shell-bash-bashrc.md)
 ---
 # BASH Notes
 ```

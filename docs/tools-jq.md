@@ -1,5 +1,5 @@
-- [[home]]
-- [[tools]]
+- [home](/)
+- [tools](/tools.md)
 ---
 # jq
 - https://stedolan.github.io/jq/

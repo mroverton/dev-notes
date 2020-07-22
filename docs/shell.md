@@ -1,5 +1,5 @@
-
-[[bash|shell bash]]
+- [home](/)
+- [bash](/shell-bash.md)
 ---
 # edit path on macOS
 - /etc/paths

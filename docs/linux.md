@@ -1,6 +1,6 @@
-- [[home]]
+- [home](/)
 # Dist
-- [[alpine|linux-alpine]]
-- [[ubuntu|linux-ubuntu]]
+- [alpine](/linux-alpine.md)
+- [ubuntu](/linux-ubuntu.md)
 # System
-- [[systemd|linux-systemd]]
+- [systemd](/linux-systemd.md)

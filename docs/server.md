@@ -1,2 +1,2 @@
-- [[home]]
-- [[NGINX|server-nginx]]
+- [home](/)
+- [NGINX](/server-nginx.md)

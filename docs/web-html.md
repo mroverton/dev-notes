@@ -1,5 +1,7 @@
-- [[CSS|web-css]]
-- [[JS|web-js]]
+- [home](/)
+- [web](/web.md)
+- [CSS](/web-css.md)
+- [JS](/web-js.md)
 ---
 # HTML
 ## Ref

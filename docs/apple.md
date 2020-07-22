@@ -1,8 +1,8 @@
-- [[home]]
+- [home](/)
 ---
 # Apple Notes
-- [[brew|apple-brew]]
-- [[finder|apple-finder]]
+- [brew](/apple-brew.md)
+- [finder](/apple-finder.md)
 
 ## Send cli output to the clipboard
 ```

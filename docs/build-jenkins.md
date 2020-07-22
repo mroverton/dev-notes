@@ -1,4 +1,4 @@
-[[build]]
+[build](/build.md)
 ---
 # Jenkins Notes
 

@@ -1,5 +1,5 @@
-- [[home]]
-- [[java|lang-java]]
-- [[ruby|lang-ruby]]
-- [[python|lang-python]]
-- [[go|lang go]]
+- [home](/)
+- [java](/lang-java.md)
+- [ruby](/lang-ruby.md)
+- [python](/lang-python.md)
+- [go](/lang-go.md)

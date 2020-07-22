@@ -1,5 +1,4 @@
-- [[home]]
-- [[build]]
+- [build](/build.md)
 ---
 http://docs.codehaus.org/display/MAVENUSER/Multi-modules+projects
 http://docs.codehaus.org/display/MAVENUSER/Dependency+Mechanism

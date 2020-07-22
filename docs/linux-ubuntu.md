@@ -1,5 +1,5 @@
-- [[home]]
-- [[linux]]
+- [home](/)
+- [linux](/linux.md)
 ---
 # Ubuntu Notes
 

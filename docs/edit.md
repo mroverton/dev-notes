@@ -1,2 +1,2 @@
-- [[home]]
-- [[VI|edit-vi]]
+- [home](/)
+- [VI](/edit-vi.md)

@@ -1,11 +1,10 @@
-- [[home]]
-
-- [[GIT|tools-git]]
-- [[AWK|tools-awk]]
-- [[jq|tools-jq]]
-- [[yaml|tools-yaml]]
-- [[Apache Benchmarking|tools apache bench]]
-- [[ASDF|tools asdf]]
+- [home](/)
+- [GIT](/tools-git.md)
+- [AWK](/tools-awk.md)
+- [jq](/tools-jq.md)
+- [yaml](/tools-yaml.md)
+- [Apache Benchmarking](/tools-apache-bench.md)
+- [ASDF-vm](/tools-asdf.md)
 ---
 # tar
 ```

@@ -1,4 +1,4 @@
-- [[docker]]
+- [docker](/docker.md)
 ---
 # Dockerfile and Build Notes
 

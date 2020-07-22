@@ -1,4 +1,5 @@
-- [[net]]
+- [home](/)
+- [net](/net.md)
 ---
 # SSH Notes
 

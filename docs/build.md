@@ -1,4 +1,4 @@
-- [[home]]
-- [[jenkins|build-jenkins]]
-- [[make|build-make]]
-- [[maven|build-maven]]
+- [home](/)
+- [jenkins](/build-jenkins.md)
+- [make](build-make.md)
+- [maven](/build-maven.md)

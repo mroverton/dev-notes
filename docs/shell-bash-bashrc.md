@@ -1,5 +1,6 @@
-- [[home]]
-- [[bash|shell-bash]]
+- [home](/)
+- [bash](/shell-bash.md)
+- [alias](/shell-bash-alias.md)
 ---
 
 ```

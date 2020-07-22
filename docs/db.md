@@ -1,3 +1,3 @@
-- [[home]]
-- [[mongo|db-mongo]]
-- [[postgres|db-postgres]]
+- [home](/)
+- [mongo](/db-mongo.md)
+- [postgres](/db-postgres.md)

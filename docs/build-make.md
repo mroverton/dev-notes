@@ -1,4 +1,4 @@
-[[build]]
+[build](/build.md)
 ---
 
 https://www.gnu.org/software/make/manual/make.html
