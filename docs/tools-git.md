@@ -71,8 +71,7 @@ git push --delete origin YOUR_TAG_NAME # remote
 git tag -l | xargs git tag -d
 git fetch --tags
 ```
-## ~/.gitconfig
-## aliases
+## aliases from ~/.gitconfig
 ```
 [alias]
     a = add

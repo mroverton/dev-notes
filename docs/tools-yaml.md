@@ -5,6 +5,9 @@ layout: default
 - [tools](/tools.md)
 
 ---
+# YAML
+- <https://www.json2yaml.com/>
+
 # Use templates
 ```
 defaults: &defaults
@@ -19,6 +22,4 @@ use-em:
   another: val
 ```
 
-
-https://www.json2yaml.com/
 

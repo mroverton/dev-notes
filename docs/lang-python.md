@@ -3,8 +3,10 @@ layout: default
 ---
 - [home](/index.md)
 - [lang](/lang.md)
+
 ---
 # Python Notes
+
 ## Docs
 - <https://docs.python.org/3.7/index.html>
 - [Python3 Tutorial](https://docs.python.org/3/tutorial/index.html)
@@ -16,6 +18,7 @@ layout: default
 ```
 print "\n".join(sys.path)
 ```
+
 ## get IP
 ```
 hostname -I
@@ -26,12 +29,15 @@ python -c "import socket; s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM); 
 - <https://docs.python.org/3/library/functions.html#open>
 - <https://docs.python.org/2.7/library/functions.html#open>
 - <https://docs.python.org/2.7/library/stdtypes.html#bltin-file-objects>
+
+### version 3
 ```
-# 3
 with open('spamspam.txt', 'w', opener=opener) as f:
     print('This will be written to somedir/spamspam.txt', file=f)
+```
 
-# 2.7
+### version 2.7
+```
 with open("hello.txt") as f:
     for line in f:
         print line,

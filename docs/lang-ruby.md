@@ -7,16 +7,18 @@ layout: default
 ---
 ## Rails
 - [rails](/lang-ruby-rails.md)
+
 ## Docs
 - <http://ruby-doc.org/>
+
 ---
 ## Kernel
-- <https://ruby-doc.org/core-2.7.1/Kernel.html>
-Lots of goodness
+- <https://ruby-doc.org/core-2.7.1/Kernel.html> Lots of goodness
 
 ## Open
 - <https://ruby-doc.org/core-2.7.1/Kernel.html#method-i-open>
 - <https://ruby-doc.org/core-2.7.1/IO.html#method-c-open>
+
 ```
 open("testfile") do |f|
   print f.gets
@@ -25,8 +27,8 @@ end
 cmd = open("|date")
 print cmd.gets
 cmd.close
-
 ```
+
 ## Unbuffered output
 ```
 $stdout.sync = true
