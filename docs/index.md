@@ -1,21 +1,21 @@
 # Welcome to my dev-notes wiki!
-- [apple](/apple.html)
-- [build](/build.html)
-- [cloud](/cloud.html)
-- [database](/db.html)
-- [docker](/docker.html)
-- [editors](/edit.html)
-- [languages](/lang.html)
-- [linux](/linux.html)
-- [networking](/net.html)
-- [server](/server.html)
-- [shell](/shell.html) - bash 
-- [ssh](/net-ssh.html) 
-- [tools](/tools.html) - awk git 
-- [web](/web.html)
+- [apple](/apple.md)
+- [build](/build.md)
+- [cloud](/cloud.md)
+- [database](/db.md)
+- [docker](/docker.md)
+- [editors](/edit.md)
+- [languages](/lang.md)
+- [linux](/linux.md)
+- [networking](/net.md)
+- [server](/server.md)
+- [shell](/shell.md) - bash 
+- [ssh](/net-ssh.md) 
+- [tools](/tools.md) - awk git 
+- [web](/web.md)
 
 ## Coding
-- [Date and Time](/code-date-and-time.html)
+- [Date and Time](/code-date-and-time.md)
 
 ## GitHub
 - https://pages.github.com/
