@@ -5,11 +5,13 @@ layout: default
 - [web](/web.md)
 - [CSS](/web-css.md)
 - [JS](/web-js.md)
+
 ---
 # HTML
+
 ## Ref
-- https://developer.mozilla.org/en-US/docs/Glossary/HTML
-- https://www.w3schools.com/html/
+- <https://developer.mozilla.org/en-US/docs/Glossary/HTML>
+- <https://www.w3schools.com/html/>
 - [bash href](https://www.w3.org/TR/html5/document-metadata.html#the-base-element)
 
 ## Check SSL Certs

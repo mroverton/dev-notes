@@ -6,9 +6,10 @@ layout: default
 - [ruby](/lang-ruby.md)
 - [python](/lang-python.md)
 - [java](/lang-java.md)
+
 ---
 ## Links
-- https://github.com/asdf-vm
+- <https://github.com/asdf-vm>
 
 
 ```

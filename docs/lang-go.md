@@ -3,9 +3,10 @@ layout: default
 ---
 - [home](/index.md)
 - [lang](/lang.md)
+
 ---
 # GoLang
-- https://golang.org/
+- <https://golang.org/>
 
 ```
 # env

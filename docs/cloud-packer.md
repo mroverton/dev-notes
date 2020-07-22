@@ -3,8 +3,9 @@ layout: default
 ---
 - [home](/index.md)
 - [cloud](/cloud.md)
+
 ---
-### Sample
+# Packer Sample
 ```
 {
   "variables": {

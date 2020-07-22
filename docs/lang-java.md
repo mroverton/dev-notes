@@ -3,10 +3,11 @@ layout: default
 ---
 - [home](/index.md)
 - [lang](/lang.md)
+
 ---
 # Java notes
 
-[[Spring|lang-java-spring]]
+[Spring](/lang-java-spring.md)
 
 ## jstatd in openjdk:8-alpine container
 ```

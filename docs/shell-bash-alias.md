@@ -4,7 +4,10 @@ layout: default
 - [home](/index.md)
 - [bash](/shell-bash.md)
 - [bashrc](/shell-bash-bashrc.md)
+
 ---
+# BASH Aliases
+
 ```
 alias ,,a='set-aws-creds.sh'
 

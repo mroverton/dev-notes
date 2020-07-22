@@ -3,8 +3,8 @@ layout: default
 ---
 - [home](/index.md)
 - [db](/db.md)
----
 
+---
 # Postgres Notes
 
 ## Start/Stop MacOS service

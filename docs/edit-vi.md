@@ -3,6 +3,7 @@ layout: default
 ---
 - [home](/index.md)
 - [edit](/edit.md)
+
 ---
 # VI Notes
 

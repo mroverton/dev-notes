@@ -3,19 +3,20 @@ layout: default
 ---
 - [home](/index.md)
 - [lang](/lang.md)
+
 ---
 ## Rails
-- [[rails|lang-ruby-rails]]
+- [rails](/lang-ruby-rails.md)
 ## Docs
-- http://ruby-doc.org/
+- <http://ruby-doc.org/>
 ---
 ## Kernel
-- https://ruby-doc.org/core-2.7.1/Kernel.html
+- <https://ruby-doc.org/core-2.7.1/Kernel.html>
 Lots of goodness
 
 ## Open
-- https://ruby-doc.org/core-2.7.1/Kernel.html#method-i-open
-- https://ruby-doc.org/core-2.7.1/IO.html#method-c-open
+- <https://ruby-doc.org/core-2.7.1/Kernel.html#method-i-open>
+- <https://ruby-doc.org/core-2.7.1/IO.html#method-c-open>
 ```
 open("testfile") do |f|
   print f.gets
@@ -95,7 +96,7 @@ gem install ruby-debug-ide --version '0.6.1.beta9'
 ```
 
 ## Disable docs on gem install
-https://stackoverflow.com/questions/1381725/how-to-make-no-ri-no-rdoc-the-default-for-gem-install
+- [how-to-make-no-ri-no-rdoc-the-default-for-gem-install](https://stackoverflow.com/questions/1381725/how-to-make-no-ri-no-rdoc-the-default-for-gem-install)
 ```
 -N # cli option
 cat > ~/.gemrc <<EOF
@@ -166,9 +167,9 @@ SecureRandom.hex(32)
 
 # Version managers
 Look here to find different implementations 
-- Currently [[asdf|tools asdf]] is the best
-- https://github.com/rbenv/rbenv
-- https://rvm.io/
+- Currently [asdf-vm](/tools-asdf.md) is the best
+- <https://github.com/rbenv/rbenv>
+- <https://rvm.io/>
 
 # Bundler
 ```

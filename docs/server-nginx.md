@@ -1,8 +1,9 @@
-- [home](/index.md)
 ---
 layout: default
 ---
+- [home](/index.md)
 - [server](/server.md)
+
 ---
 # NGINX
 - https://nginxconfig.io/ # configurator

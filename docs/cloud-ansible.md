@@ -3,6 +3,7 @@ layout: default
 ---
 - [home](/index.md)
 - [cloud](/cloud.md)
+
 ---
 # Ansible
 - <https://docs.ansible.com/ansible/latest/index.html>

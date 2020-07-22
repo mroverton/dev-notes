@@ -3,9 +3,11 @@ layout: default
 ---
 - [home](/index.md)
 - [tools](/tools.md)
+
 ---
 # GIT Notes
-- https://git-scm.com/docs
+- <https://git-scm.com/docs>
+
 ```
 git fetch origin
 git pull origin master
