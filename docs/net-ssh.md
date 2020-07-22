@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [net](/net.md)
 ---
 # SSH Notes

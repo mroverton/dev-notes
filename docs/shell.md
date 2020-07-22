@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [bash](/shell-bash.md)
 ---
 # edit path on macOS

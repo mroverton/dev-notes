@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [lang](/lang.md)
 ---
 ## Practical Extraction and Reporting Language(PERL)

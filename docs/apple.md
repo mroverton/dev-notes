@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 ---
 # Apple Notes
 - [brew](/apple-brew.md)

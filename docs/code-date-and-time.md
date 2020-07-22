@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 ---
 # Date and Time Manipulation
 

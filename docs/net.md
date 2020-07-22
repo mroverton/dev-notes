@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [ssh](/net-ssh.md)
 ---
 # Networking

@@ -1,4 +1,5 @@
-[build](/build.md)
+- [home](/index.md)
+- [build](/build.md)
 ---
 
 https://www.gnu.org/software/make/manual/make.html

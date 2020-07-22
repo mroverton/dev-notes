@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [lang-java](/lang-java.md)
 ---
 # Spring notes

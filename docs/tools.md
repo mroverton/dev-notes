@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [GIT](/tools-git.md)
 - [AWK](/tools-awk.md)
 - [jq](/tools-jq.md)

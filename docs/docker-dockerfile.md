@@ -1,3 +1,4 @@
+- [home](/index.md)
 - [docker](/docker.md)
 ---
 # Dockerfile and Build Notes

@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [alias](/shell-bash-alias.md)
 - [bashrc](/shell-bash-bashrc.md)
 ---

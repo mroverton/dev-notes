@@ -1,3 +1,4 @@
+- [home](/index.md)
 - [db](/db.md)
 ---
 

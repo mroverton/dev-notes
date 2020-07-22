@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [server](/server.md)
 ---
 # NGINX

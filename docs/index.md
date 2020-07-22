@@ -1,4 +1,3 @@
-- [Home](/home.md)
 # Welcome to my dev-notes wiki!
 - [apple](/apple.md)
 - [build](/build.md)

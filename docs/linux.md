@@ -1,4 +1,5 @@
-- [home](/)
+- [home](/index.md)
+---
 # Dist
 - [alpine](/linux-alpine.md)
 - [ubuntu](/linux-ubuntu.md)

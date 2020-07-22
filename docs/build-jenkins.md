@@ -1,4 +1,5 @@
-[build](/build.md)
+- [home](/index.md)
+- [build](/build.md)
 ---
 # Jenkins Notes
 

@@ -1,3 +1,4 @@
+- [home](/index.md)
 - [build](/build.md)
 ---
 http://docs.codehaus.org/display/MAVENUSER/Multi-modules+projects

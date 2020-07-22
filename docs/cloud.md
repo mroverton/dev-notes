@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [aws](/cloud-aws.md)
 - [terraform](/cloud-terraform.md)
 - [packer](/cloud-packer.md)

@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [tools](/tools.md)
 - [ruby](/lang-ruby.md)
 - [python](/lang-python.md)

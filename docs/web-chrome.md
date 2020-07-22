@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [web](/web.md)
 ---
 # Chrome

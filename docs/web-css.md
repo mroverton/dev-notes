@@ -1,4 +1,4 @@
-- [home](/)
+- [home](/index.md)
 - [web](/web.md)
 - [HTML](/web-html.md)
 - [JS](/web-js.md)
