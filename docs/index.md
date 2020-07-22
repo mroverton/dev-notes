@@ -1,1 +1,1 @@
-- [Home](/home)
+- [Home](/home.md)
