@@ -1,3 +1,6 @@
+---
+layout: default
+---
 - [home](/index.md)
 - [GIT](/tools-git.md)
 - [AWK](/tools-awk.md)

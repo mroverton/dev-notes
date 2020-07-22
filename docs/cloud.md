@@ -1,3 +1,6 @@
+---
+layout: default
+---
 - [home](/index.md)
 - [aws](/cloud-aws.md)
 - [terraform](/cloud-terraform.md)

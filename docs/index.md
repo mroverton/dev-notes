@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Welcome to my dev-notes wiki!
 - [apple](/apple.md)
 - [build](/build.md)

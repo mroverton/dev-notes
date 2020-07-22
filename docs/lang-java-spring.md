@@ -1,3 +1,6 @@
+---
+layout: default
+---
 - [home](/index.md)
 - [lang-java](/lang-java.md)
 ---

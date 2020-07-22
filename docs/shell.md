@@ -1,4 +1,7 @@
 - [home](/index.md)
+---
+layout: default
+---
 - [bash](/shell-bash.md)
 ---
 # edit path on macOS

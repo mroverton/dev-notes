@@ -1,4 +1,7 @@
 - [home](/index.md)
+---
+layout: default
+---
 - [server](/server.md)
 ---
 # NGINX

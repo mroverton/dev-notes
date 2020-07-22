@@ -1,3 +1,6 @@
+---
+layout: default
+---
 - [home](/index.md)
 - [docker](/docker.md)
 ---

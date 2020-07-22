@@ -1,3 +1,6 @@
+---
+layout: default
+---
 - [home](/index.md)
 - [bash](/shell-bash.md)
 - [alias](/shell-bash-alias.md)

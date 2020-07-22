@@ -1,3 +1,6 @@
+---
+layout: default
+---
 - [home](/index.md)
 - [web](/web.md)
 - [HTML](/web-html.md)
