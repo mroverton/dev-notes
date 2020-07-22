@@ -1,5 +1,9 @@
 #!/usr/bin/env ruby
 
+# For use with Gemfile and bundler
+require 'rubygems'
+require 'bundler/setup'
+
 require 'aws-sdk'
 require 'optparse' # command line option parser
 require 'ostruct' # struct holding parsed options
