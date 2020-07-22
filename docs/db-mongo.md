@@ -3,7 +3,8 @@ layout: default
 ---
 - [home](/index.md)
 - [db](/db.md)
----
+
+# Mongo
 ```
 mongodump --db dname --out `date '+%Y-%m-%d-mongo-'``hostname`
 mongorestore --db dname --drop

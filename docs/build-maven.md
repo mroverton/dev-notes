@@ -3,16 +3,17 @@ layout: default
 ---
 - [home](/index.md)
 - [build](/build.md)
+
 ---
-http://docs.codehaus.org/display/MAVENUSER/Multi-modules+projects
-http://docs.codehaus.org/display/MAVENUSER/Dependency+Mechanism
-http://www.ibm.com/developerworks/java/library/j-5things13/index.html
-http://maven.apache.org/plugins/maven-deploy-plugin/
-http://maven.apache.org/plugins/maven-deploy-plugin/deploy-file-mojo.html
-http://maven.apache.org/maven-release/maven-release-plugin/
+<http://docs.codehaus.org/display/MAVENUSER/Multi-modules+projects>
+<http://docs.codehaus.org/display/MAVENUSER/Dependency+Mechanism>
+<http://www.ibm.com/developerworks/java/library/j-5things13/index.html>
+<http://maven.apache.org/plugins/maven-deploy-plugin/>
+<http://maven.apache.org/plugins/maven-deploy-plugin/deploy-file-mojo.html>
+<http://maven.apache.org/maven-release/maven-release-plugin/>
 
 ## Search for packages
-- http://search.maven.org
+- <http://search.maven.org>
 
 ## Skip Tests
 ```

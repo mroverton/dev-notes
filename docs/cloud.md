@@ -6,7 +6,8 @@ layout: default
 - [terraform](/cloud-terraform.md)
 - [packer](/cloud-packer.md)
 - [ansible](/cloud-ansible.md)
+
 ---
 ## Links
-- https://www.hashicorp.com/
-- https://cloudcraft.co/
+- <https://www.hashicorp.com/>
+- <https://cloudcraft.co/>

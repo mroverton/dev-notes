@@ -5,8 +5,8 @@ layout: default
 - [cloud](/cloud.md)
 ---
 # Terraform
-- https://www.terraform.io/docs/index.html
-- https://registry.terraform.io/
+- [www.terraform.io](https://www.terraform.io/docs/index.html)
+- [registry.terraform.io](https://registry.terraform.io/)
 - [String functions](https://www.terraform.io/docs/configuration/functions/format.html)
 - [Collection functions](https://www.terraform.io/docs/configuration/functions/merge.html)
 - [life-cycle](https://www.terraform.io/docs/configuration/resources.html#lifecycle-lifecycle-customizations)
@@ -24,7 +24,7 @@ tf destroy -force -refresh=false # when bucket is already gone
 terraform graph | dot -Tpdf > tf-graph.pdf
 ```
 ## Debugging
-https://www.terraform.io/docs/internals/debugging.html
+- [debugging](https://www.terraform.io/docs/internals/debugging.html)
 ```
 export TF_LOG=DEBUG
 ```

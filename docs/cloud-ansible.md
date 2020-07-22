@@ -5,7 +5,7 @@ layout: default
 - [cloud](/cloud.md)
 ---
 # Ansible
-- https://docs.ansible.com/ansible/latest/index.html
+- <https://docs.ansible.com/ansible/latest/index.html>
 ## Modules
 ### List
 `ansible-doc -l`

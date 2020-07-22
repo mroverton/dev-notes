@@ -54,13 +54,13 @@ aws --profile myprod route53 list-hosted-zones |jq -c '.HostedZones[]|{name:.Nam
 ```
 
 # Get Account ID
-https://docs.aws.amazon.com/IAM/latest/UserGuide/console_account-alias.html
+- [console_account-alias](https://docs.aws.amazon.com/IAM/latest/UserGuide/console_account-alias.html)
 ```
 aws sts get-caller-identity --query Account --output text
 ```
 
 # Retrieving Instance Metadata
-https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html
+- [instancedata-data-retrieval](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html)
 ```
 curl http://169.254.169.254/latest/meta-data/
 ```
@@ -76,7 +76,7 @@ journalctl -xu cloud-final -f
 
 # EKS
 ## aws-iam-authenicator
-- https://github.com/kubernetes-sigs/aws-iam-authenticator
+- [aws-iam-authenticator](https://github.com/kubernetes-sigs/aws-iam-authenticator)
 ```
 aws eks get-token --cluster-name xxx
 

@@ -2,6 +2,7 @@
 layout: default
 ---
 - [home](/index.md)
+
 ---
 # Date and Time Manipulation
 
