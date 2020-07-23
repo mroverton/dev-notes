@@ -5,7 +5,7 @@ layout: default
 - [apple](/apple.md)
 
 ---
-# brew
+# Apple brew Notes
 ```
 brew upgrade
 brew cask upgrade

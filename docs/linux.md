@@ -4,9 +4,11 @@ layout: default
 - [home](/index.md)
 
 ---
-# Dist
+# Linux Notes
+
+## Distrobutions
 - [alpine](/linux-alpine.md)
 - [ubuntu](/linux-ubuntu.md)
 
-# Systemd
+## Systemd
 - [systemd](/linux-systemd.md)

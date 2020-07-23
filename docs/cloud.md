@@ -8,6 +8,8 @@ layout: default
 - [ansible](/cloud-ansible.md)
 
 ---
+# Cloud Notes
+
 ## Links
 - <https://www.hashicorp.com/>
 - <https://cloudcraft.co/>
