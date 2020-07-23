@@ -17,11 +17,11 @@ layout: default
 - [tools](/tools.md) - awk, git 
 - [web](/web.md)
 
-## GitHub
-- <https://github.com/mroverton/dev-notes>
-
 ## Coding
 - [Date and Time](/code-date-and-time.md)
+
+## GitHub
+- <https://github.com/mroverton/dev-notes>
 
 ## GitHub Pages
 - <https://pages.github.com/>
