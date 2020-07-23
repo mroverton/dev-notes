@@ -8,6 +8,11 @@ layout: default
 # GoLang
 - <https://golang.org/>
 - <https://awesome-go.com/>
+- <https://github.com/avelino/awesome-go>
+
+## Setup
+- [Cobra](https://github.com/spf13/cobra) arg processing and more
+- [Viper](https://github.com/spf13/viper) configuration
 
 ## Worker pool
 - <https://github.com/alitto/pond>
@@ -20,7 +25,11 @@ layout: default
 
 ## Postgres
 - <https://github.com/go-pg/pg>
+- <https://github.com/jackc/pgx>
+- <https://github.com/lib/pq>
 - [Rest PG Example](https://semaphoreci.com/community/tutorials/building-and-testing-a-rest-api-in-go-with-gorilla-mux-and-postgresql)
+- [How to work with Postgres in Go](https://medium.com/avitotech/how-to-work-with-postgres-in-go-bad2dabd13e4)
+- [pgweb](https://github.com/sosedoff/pgweb)
 
 ```
 # env

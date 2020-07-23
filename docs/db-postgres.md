@@ -8,7 +8,7 @@ layout: default
 # Postgres Notes
 - <https://www.postgresql.org/>
 - <https://www.postgresql.org/docs/10/index.html>
-
+- <https://github.com/dhamaniasad/awesome-postgres>
 
 ## Start/Stop MacOS service
 ```
