@@ -29,3 +29,7 @@ goenv
 go get -u github.com/golang/dep/cmd/dep
 go get github.com/vapor-ware/ksync/cmd/ksync
 ```
+
+## People
+- [Steve Francia](https://github.com/spf13) Hugo creator. Utils like cobra and viper
+
