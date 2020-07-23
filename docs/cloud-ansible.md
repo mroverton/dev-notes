@@ -53,8 +53,9 @@ resource "local_file" "ssh-config" {
   filename = "${path.module}/ssh.cfg"
 }
 ```
+
 ### inventory.tpl
-```shell script
+```
 [hostgroup1]
 ${host}
 

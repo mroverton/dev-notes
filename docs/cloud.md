@@ -2,13 +2,13 @@
 layout: default
 ---
 - [home](/index.md)
+
+---
+# Cloud Notes
 - [aws](/cloud-aws.md)
 - [terraform](/cloud-terraform.md)
 - [packer](/cloud-packer.md)
 - [ansible](/cloud-ansible.md)
-
----
-# Cloud Notes
 
 ## Links
 - <https://www.hashicorp.com/>
