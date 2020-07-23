@@ -61,7 +61,7 @@ docker inspect --format='{{json .State.Health}}' $(dc ps -q svcname) |jq .
 ```
 
 ## Accessing Docker VM
-https://gist.github.com/BretFisher/5e1a0c7bcca4c735e716abf62afad389
+<https://gist.github.com/BretFisher/5e1a0c7bcca4c735e716abf62afad389>
 ```
 screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux/tty
 

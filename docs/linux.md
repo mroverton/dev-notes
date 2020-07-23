@@ -6,7 +6,7 @@ layout: default
 ---
 # Linux Notes
 
-## Distrobutions
+## Distributions
 - [alpine](/linux-alpine.md)
 - [ubuntu](/linux-ubuntu.md)
 
