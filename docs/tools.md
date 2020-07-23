@@ -2,6 +2,9 @@
 layout: default
 ---
 - [home](/index.md)
+
+---
+# Tool Notes
 - [GIT](/tools-git.md)
 - [AWK](/tools-awk.md)
 - [jq](/tools-jq.md)
