@@ -19,3 +19,6 @@ cd /Library/PostgreSQL/9.6/bin/
 ./pg_ctl -D /Library/PostgreSQL/9.6/data -l /Library/PostgreSQL/9.6/data/pg_log/postgresql-server.log start
 launchctl remove com.edb.launchd.postgresql-9.6
 ```
+
+## Links
+- <https://github.com/dhamaniasad/awesome-postgres>
