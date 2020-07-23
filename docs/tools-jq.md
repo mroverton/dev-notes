@@ -19,8 +19,15 @@ cat mro.users |jq '{ user: .username, email: (.attributes[] | select(.name == "e
 
 cat mro.users |jq -c '. | select(.user_status != "FORCE_CHANGE_PASSWORD")'|jq -c '{ user: .username, email: (.attributes[] | select(.name == "email") |.value), status: .user_status}'
 
-npm search aws -json |jq '[.[] |{date,name,version}]'|jq 'sort_by(.date)'
+npm search aws -json |jq '[.[] |{date,name,version}]'|jq 'sort_by(.date)|.[]'
 
 # convert splunk output
 cat from-splunk.json |jq '.result._raw|fromjson' |less
+
+# convert embedded file content to string
+jq -r '.some.embedded.field.with.newlines.escaped'
+
+# escape and capture content for embedding into json field
+cat mro.txt |jq -sR |pbcopy
+
 ```
