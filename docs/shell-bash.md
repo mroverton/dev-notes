@@ -129,6 +129,8 @@ pwgen 50 1 -s > passphrase
 
 ruby -rsecurerandom -e 'puts SecureRandom.hex(32)'
 
+cat /proc/sys/kernel/random/uuid
+
 ```
 - <https://www.random.org/passwords/?num=2&len=20&format=html&rnd=new>
 
