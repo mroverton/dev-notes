@@ -49,4 +49,8 @@ SET time_zone = 'America/Los_Angeles';
 ## NTP
 ```
 watch -n2 ntpq --numeric --peers
+
+## Golang parse time/date
+- https://golang.org/pkg/time/#Parse
+
 ```
