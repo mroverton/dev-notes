@@ -5,7 +5,8 @@ layout: default
 
 ---
 # Language Notes
-- [java](/lang-java.md)
-- [ruby](/lang-ruby.md)
-- [python](/lang-python.md)
 - [go](/lang-go.md)
+- [java](/lang-java.md)
+- [PHP](/lang-php.md)
+- [python](/lang-python.md)
+- [ruby](/lang-ruby.md)
