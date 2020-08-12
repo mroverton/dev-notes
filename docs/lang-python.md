@@ -13,6 +13,7 @@ layout: default
 - [Types](https://docs.python.org/3.7/library/stdtypes.html)
 - [Standard Lib](https://docs.python.org/3.7/library/index.html)
 - [TutorialsPoint](https://www.tutorialspoint.com/python/python_quick_guide.htm)
+- [W3Schools Python](https://www.w3schools.com/python/default.asp)
 
 ## Paths
 ```
