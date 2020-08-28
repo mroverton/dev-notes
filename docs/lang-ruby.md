@@ -106,7 +106,7 @@ gem: --no-rdoc --no-ri
 EOF
 ```
 
-## print backtraces
+## print backtraces try/catch
 ```
 begin
   Whatever.you.want
