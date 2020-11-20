@@ -122,7 +122,7 @@ cat pub_key |ssh <name|ip> 'cat - >> .ssh/authorized_keys'
 
 # Add sudo to rsync priv
 ```
-rsync -av --rsync-path="sudo rsync" dfe-root:/etc ./
+rsync -avC --rsync-path="sudo rsync" dfe-root:/etc ./
 ```
 
 # VSCode with elevated privs
