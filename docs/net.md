@@ -94,6 +94,7 @@ ifconfig vlan22 inet 10.10.22.22 netmask 255.255.255.255
 ifconfig vlan11 destroy
 ifconfig vlan22 destroy
 ```
+
 ## Local DNS with dnsmasq
 
 - source <https://zhimin-wen.medium.com/setup-local-dns-server-on-macbook-82ad22e76f2a>
@@ -115,19 +116,26 @@ nameserver 127.0.0.1
 EOF
 
 sudo brew services start dnsmasq
+```
 
-#dnsmasq direct test
+## dnsmasq direct test
+
+```
 dig host1.io.local @localhost +short
 192.168.20.21
 dig anyname.io.local @localhost +short
 192.168.20.21
+```
 
-# see dns detail
+## see dns detail
+
+```
 scutil --dns
+```
 
-# flush dns
+## flush dns
+
+```
 sudo dscacheutil -flushcache
 sudo killall -HUP mDNSResponder
-
-
 ```
