@@ -82,6 +82,7 @@ GETIPADDR="dig +short myip.opendns.com @resolver1.opendns.com"
 
 ## Virtual Hosts Setup
 - Using vlan nic tied to wifi nic
+
 ```
 sudo -i
 ifconfig vlan11 create
