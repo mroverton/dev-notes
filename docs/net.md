@@ -79,7 +79,9 @@ GETIPADDR="dig +short myip.opendns.com @resolver1.opendns.com"
 - iperf -P
 
 # MacOS
-## vNIC
+
+## Virtual Hosts Setup
+- Using vlan nic tied to wifi nic
 ```
 sudo -i
 ifconfig vlan11 create
@@ -92,9 +94,10 @@ ifconfig vlan22 inet 10.10.22.22 netmask 255.255.255.255
 ifconfig vlan11 destroy
 ifconfig vlan22 destroy
 ```
+## Local DNS with dnsmasq
 
-## DNSmasq
 - source https://zhimin-wen.medium.com/setup-local-dns-server-on-macbook-82ad22e76f2a
+
 ```
 brew install dnsmasq
 cp /usr/local/etc/dnsmasq.conf /usr/local/etc/dnsmasq.conf.orig
