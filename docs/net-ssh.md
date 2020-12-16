@@ -13,6 +13,9 @@ ssh-add -L
 ssh-add ~/.ssh/key.pem
 ssh -A ... or add ForwardAgent yes to ~/.ssh/config
 
+# gen a new key
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
 # gen a new key to a file
 ssh-keygen -f ~/.ssh/myfile.pem
 
