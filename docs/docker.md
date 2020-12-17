@@ -67,6 +67,9 @@ screen ~/Library/Containers/com.docker.docker/Data/com.docker.driver.amd64-linux
 
 docker run --rm -it --privileged --pid=host walkerlee/nsenter -t 1 -m -u -i -n sh
 docker run -it --rm --privileged --pid=host justincormack/nsenter1
+# 2020-12-16
+socat -d -d ~/Library/Containers/com.docker.docker/Data/debug-shell.sock pty,rawer
+screen <tty returned>
 ```
 
 - [Elastic Doc](https://www.elastic.co/guide/en/elasticsearch/reference/7.8/docker.html) has
