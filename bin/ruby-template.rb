@@ -64,7 +64,12 @@ class MyClass
             o.separator ''
         end
 
-        opt_parser.parse!(args)
+        begin
+            opt_parser.parse!(args)
+        rescue => exception
+            puts opt_parser
+            exit 1
+        end
 
         if _opts.operations.empty?
             STDOUT.puts opt_parser
