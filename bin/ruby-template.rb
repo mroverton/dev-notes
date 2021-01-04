@@ -67,6 +67,7 @@ class MyClass
         begin
             opt_parser.parse!(args)
         rescue => exception
+            puts exception
             puts opt_parser
             exit 1
         end
