@@ -24,3 +24,9 @@ sudo dscacheutil -flushcache
 ```
 scutil --dns
 ```
+
+# brew unlink/link
+```
+brew unlink php && brew link --overwrite --force php@7.4
+
+```
