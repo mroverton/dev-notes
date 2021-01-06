@@ -10,11 +10,12 @@ layout: default
 - [editors](/edit.md)
 - [languages](/lang.md)
 - [linux](/linux.md)
+- [macos](/macos.md)
 - [networking](/net.md)
 - [server](/server.md)
-- [shell](/shell.md) - bash 
-- [ssh](/net-ssh.md) 
-- [tools](/tools.md) - awk, git 
+- [shell](/shell.md) - bash
+- [ssh](/net-ssh.md)
+- [tools](/tools.md) - awk, git
 - [web](/web.md)
 
 ## Coding

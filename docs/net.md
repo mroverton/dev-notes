@@ -6,6 +6,16 @@ layout: default
 
 ---
 # Networking
+
+# private address spaces
+
+```
+10.0.0.0/8      10.0.0.0    – 10.255.255.255
+172.16.0.0/12   172.16.0.0  – 172.31.255.255
+192.168.0.0/16  192.168.0.0 – 192.168.255.255
+```
+
+
 ```
 curl -v ipv4.icanhazip.com
 curl -v -6 ipv6.icanhazip.com
@@ -94,6 +104,15 @@ ifconfig vlan22 inet 10.10.22.22 netmask 255.255.255.255
 
 ifconfig vlan11 destroy
 ifconfig vlan22 destroy
+
+
+# another way?
+sudo ifconfig en0  alias 10.10.11.11/32 up # create
+sudo ifconfig en0  alias 10.10.22.22/32 up # create
+
+sudo ifconfig en0 -alias 10.0.11.11/32     # remove
+sudo ifconfig en0 -alias 10.0.22.22/32     # remove
+
 ```
 
 ## Local DNS with dnsmasq
