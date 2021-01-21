@@ -4,6 +4,8 @@ layout: default
 - [home](/index.md)
 - [docker](/docker.md)
 
+- [HEALTHCHECK](https://docs.docker.com/engine/reference/builder/#healthcheck)
+
 ---
 # Dockerfile and Build Notes
 
