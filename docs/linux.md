@@ -12,3 +12,6 @@ layout: default
 
 ## Systemd
 - [systemd](/linux-systemd.md)
+
+## Learning
+- man 7 capabilities
