@@ -3,6 +3,7 @@ layout: default
 ---
 - [home](/index.md)
 - [docker](/docker.md)
+- [limit resources](https://docs.docker.com/compose/compose-file/compose-file-v3/#resources)
 
 ---
 # Docker Compose Notes
