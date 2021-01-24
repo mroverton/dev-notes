@@ -54,6 +54,7 @@ sudo dscacheutil -flushcache
 tcpdump -ni en0 'tcp[tcpflags] & (tcp-syn|tcp-fin) != 0'
 tcpdump -i eno2 ether host 'xx:xx:xx:xx:xx:xx'
 tcpdump -i eno2 ip host \( 1.2.3.4 or  4.3.2.1 \)
+tcpdump -n icmp # watch for pings
 ```
 
 # routes
