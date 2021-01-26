@@ -63,6 +63,7 @@ tcpdump -i eth1 not arp and port 53
 sudo route del default
 sudo route add default gw 10.182.200.1 eth1
 traceroute -n -w 1 10.182.200.100
+ip route get to 198.51.100.1 from 192.168.0.2 iif eth0
 ```
 
 # Connection tests
