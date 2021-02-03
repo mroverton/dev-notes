@@ -20,5 +20,11 @@ cd /Library/PostgreSQL/9.6/bin/
 launchctl remove com.edb.launchd.postgresql-9.6
 ```
 
+## Environment Variables
+- <https://www.postgresql.org/docs/current/libpq-envars.html>
+```
+export PGPASSWORD=xxx
+```
+
 ## Links
 - <https://github.com/dhamaniasad/awesome-postgres>
