@@ -18,3 +18,9 @@ layout: default
 # Example of timestamp and multiple files.
 tar -czvf nginx_$(date +'%F_%H-%M-%S').tar.gz nginx.conf sites-available/ sites-enabled/ nginxconfig.io/
 ```
+# less
+```
+# Dont forget about -R when ascii color is involved.
+someprocess |less -R
+
+```
