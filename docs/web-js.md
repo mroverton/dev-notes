@@ -11,6 +11,15 @@ layout: default
 - [NodeJS](/web-js-node.md)
 - [Angular](/web-js-angular.md)
 
+## Debugging
+```
+# in the console
+console.log(var)
+console.log({var})
+console.table(var)
+console.trace('where am i')
+```
+
 ---
 # Links
 - <https://developer.mozilla.org/en-US/docs/Glossary/JavaScript>
