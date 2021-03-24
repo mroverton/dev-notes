@@ -120,7 +120,7 @@ ps -elf |grep ssh
 
 # Append a key to remote server
 ```
-cat pub_key |ssh <name|ip> 'cat - >> .ssh/authorized_keys'
+cat pub_key |ssh <name|ip> '(echo; cat -) >> .ssh/authorized_keys' # echo insures newline but seems to workout
 ```
 
 # Add sudo to rsync priv
