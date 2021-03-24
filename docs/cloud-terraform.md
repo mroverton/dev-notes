@@ -24,6 +24,14 @@ terraform state rm module.EzFeedFeedWorker
 tf destroy -force -refresh=false # when bucket is already gone
 ```
 
+# Only run part of the plan
+```
+terraform apply -target=aws_instance.myinstance
+# combine with no-refresh
+# get target list with 
+terraform state list
+```
+
 ## Create a graph with dot
 ```
 terraform graph | dot -Tpdf > tf-graph.pdf
