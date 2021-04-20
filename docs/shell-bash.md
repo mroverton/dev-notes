@@ -172,3 +172,9 @@ DIR=$(cd $DIR>/dev/null; pwd -P)
 echo webserver loadbalancer database | tr ' ' '\n' \
 | xargs -I % -P 3 bash -c 'ansible-playbook $1.yml' -- %
 ```
+
+## remove root from list of files
+- ${f##*/}
+```
+for f in /sys/devices/system/cpu/vulnerabilities/*; do echo "${f##*/} -" $(cat "$f"); done
+```
