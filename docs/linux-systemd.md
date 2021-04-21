@@ -5,10 +5,34 @@ layout: default
 - [linux](/linux.md)
 
 ---
-# systemd
-```
-sudo vim /etc/systemd/system/disable-transparent-huge-pages.service
 
+- <https://wiki.debian.org/systemd/Services>
+
+# Create a new Systemd Service
+```
+sudo -i
+# --force creates new service
+systemctl edit --force --full aname.service
+```
+
+# Generic example
+```
+[Unit]
+Description=Be Home Service
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=15
+ExecStart=/root/tunnel-service.sh
+
+[Install]
+WantedBy=multi-user.target
+```
+
+# one-shot example
+```
 [Unit]
 Description=Disable Transparent Huge Pages
 
@@ -20,14 +44,15 @@ ExecStart=/bin/sh -c "/usr/bin/echo "never" | tee /sys/kernel/mm/transparent_hug
 [Install]
 WantedBy=multi-user.target
 ```
+
 ## Commands
 ```
-systemctl enable disable-transparent-huge-pages
-systemctl start disable-transparent-huge-pages
-systemctl status disable-transparent-huge-pages
+systemctl edit --force --full aname.service
 systemctl daemon-reload # after editing a file
 
-systemctl daemon-reload
+systemctl enable servicename1
+systemctl start servicename1
+systemctl status servicename1
 ```
 
 ## Edit
