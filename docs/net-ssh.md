@@ -80,7 +80,7 @@ Host git-codecommit.*.amazonaws.com
 ```
 ssh -vnNT -L localhost:27019:10.1.4.16:27017 mongo-prod # -f to bg
 
-export TARGET_IP=
+export TARGET_IP=remotenameorip
 ssh -vnNT -L localhost:8080:$TARGET_IP:80 u@gw
 ```
 
@@ -94,9 +94,9 @@ cat >> .ssh/authorized_keys
 
 - Reverse from target to proxy host
 ```
-ssh -nNT -R 19999:localhost:22 r-proxy
+ssh -nNT -R remote:19999:localhost:22 user@host
 # bind to external interface. requires modification to server. see below.
-ssh -vnNT -R \*:8080:localhost:8080 u 
+ssh -vnNT -R \*:8080:localhost:8080 u@h 
 ```
 
 - Login from proxy
@@ -108,8 +108,12 @@ ssh -p 19999 -i user.pem user@localhost
 ```
 sudo -i
 vi /etc/ssh/sshd_config
-# Allow reverse proxy to bind to 0.0.0.0
+
+# Allow TCP forwarding and reverse proxy to bind to 0.0.0.0
+
+AllowTcpForwarding yes
 GatewayPorts yes
+
 service sshd restart # does not affect current connections
 ```
 
