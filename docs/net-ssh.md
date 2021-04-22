@@ -85,6 +85,7 @@ ssh -vnNT -L localhost:8080:$TARGET_IP:80 u@gw
 ```
 
 ### Reverse
+
 - Install user pub key to authorized_keys on target
 ```
 ssh-keygen -y -f user.pem |pbcopy
@@ -138,8 +139,11 @@ rsync -avC --rsync-path="sudo rsync" dfe-root:/etc ./
 ```
 sed -i s/"-o RemoteCommand=none"/""/ ~/.vscode/extensions/ms-vscode-remote.remote-ssh-*/out/extension.js
 sed -i s/"bash"/""/ ~/.vscode/extensions/ms-vscode-remote.remote-ssh-*/out/extension.js
+```
 
 # ~/.ssh/config sample
+
+```
 Host pi-for-newuser
   Hostname pi
   User pi
