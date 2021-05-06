@@ -26,7 +26,7 @@ TZ="America/Los_Angeles" date -j -f "%Y-%m-%d %T" "2014-03-12 23:00:00" "+%s000"
 ```
 TZ="America/Los_Angeles" date -r `expr 1366727538749 '/' 1000`  # mac
 
-date date=@<seconds> # linux
+date --date=@<seconds> # linux
 date -d @1620324590
 
 
