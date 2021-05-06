@@ -24,6 +24,13 @@ ssh-keygen -y -f myprod.pem |pbcopy
 
 ```
 
+# Add sudo to rsync priv
+
+```
+rsync -avC --rsync-path="sudo rsync" dfe-root:/etc ./
+```
+
+
 ## SSH Config file snipets
 ```
 Host host-beyond-bastion
@@ -126,11 +133,6 @@ ps -elf |grep ssh
 # Append a key to remote server
 ```
 cat pub_key |ssh <name|ip> '(echo; cat -) >> .ssh/authorized_keys' # echo insures newline but seems to workout
-```
-
-# Add sudo to rsync priv
-```
-rsync -avC --rsync-path="sudo rsync" dfe-root:/etc ./
 ```
 
 # VSCode with elevated privs
