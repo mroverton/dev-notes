@@ -188,6 +188,6 @@ require 'bundler/setup'
 
 # % operator
 
-- https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation
+- <https://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Literals#The_.25_Notation>
 
 
