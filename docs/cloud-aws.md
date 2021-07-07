@@ -8,6 +8,13 @@ layout: default
 # AWS Notes
 - [SDKs](https://aws.amazon.com/getting-started/tools-sdks/)
 
+## AWS Credentials
+```
+export AWS_SHARED_CREDENTIALS_FILE=...
+aws --profile xxx
+```
+
+
 ## CLI Tools
 ```
 pip install awscli
