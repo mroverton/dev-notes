@@ -16,6 +16,11 @@ layout: default
 [ -e ~/.bash/aliases.sh ] && . ~/.bash/aliases.sh
 ```
 
+## Source and Export Variables
+```
+set -a; source .env; set +a
+```
+
 ## Exit on Error
 ```
 #! /bin/bash -eu
