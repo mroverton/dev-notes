@@ -1,4 +1,4 @@
-# Welcome to my development Notes
+# Welcome! Here are a few development notes
 
 - https://mroverton.github.io/dev-notes/
 
