@@ -30,6 +30,16 @@ ssh-keygen -y -f myprod.pem |pbcopy
 rsync -avC --rsync-path="sudo rsync" dfe-root:/etc ./
 ```
 
+# Switch to root
+```
+# login and switch to root
+ssh -t -i file.pem user@name2 'sudo -i'
+
+Host name2
+    HostName 192.168.1.148
+    RequestTTY yes
+    RemoteCommand sudo -i
+```
 
 ## SSH Config file snipets
 
