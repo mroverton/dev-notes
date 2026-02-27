@@ -18,7 +18,7 @@ pbcopy < ~/.ssh/id_rsa.pub
 ```
 ps auxww
 
-# Full listing prep
+# Full listing grep
 pgrep -al search-string
 ```
 

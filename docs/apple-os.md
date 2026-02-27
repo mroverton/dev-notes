@@ -2,7 +2,7 @@
 layout: default
 ---
 - [home](/index.md)
-
+- [apple](/apple.md)
 ---
 # Apple MacOS Notes
 
