@@ -7,6 +7,7 @@ layout: default
 # Apple Notes
 - [brew](/apple-brew.md)
 - [finder](/apple-finder.md)
+- [MacOs](/apple-os.md)
 
 ## Send cli output to the clipboard
 ```
@@ -20,6 +21,27 @@ ps auxww
 
 # Full listing grep
 pgrep -al search-string
+```
+
+# Apple MacOS Notes
+
+```
+sw_vers -productVersion
+```
+
+
+## DNS flush
+```
+# apple
+sudo killall -HUP mDNSResponder
+sudo killall mDNSResponderHelper
+sudo dscacheutil -flushcache
+```
+
+### See dns detail
+
+```
+scutil --dns
 ```
 
 ### Development

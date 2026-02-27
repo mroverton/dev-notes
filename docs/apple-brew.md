@@ -40,6 +40,12 @@ brew services list
 brew list | while read cask; do echo -n "$cask -> "; brew deps $cask | awk '{printf(" %s ", $0)}'; echo ""; done
 ```
 
+## Unlink/Link
+```
+brew unlink php && brew link --overwrite --force php@7.4
+
+```
+
 ## Change links
 ```
 brew unlink postgresql@14
