@@ -12,4 +12,4 @@ layout: default
 
 ## Links
 - [https://www.hashicorp.com](https://www.hashicorp.com/){target="_blank"}
-- <https://cloudcraft.co/>
+- <a href="https://cloudcraft.co/" target="_blank">cloudcraft.com</a>
