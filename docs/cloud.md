@@ -11,5 +11,5 @@ layout: default
 - [packer](/cloud-packer.md)
 
 ## Links
-- [https://www.hashicorp.com](https://www.hashicorp.com/){target="_blank"}
+- <a href="https://www.hashicorp.com" target="_blank">hashicorp.com</a>
 - <a href="https://cloudcraft.co/" target="_blank">cloudcraft.com</a>
