@@ -7,7 +7,6 @@ layout: default
 # Apple Notes
 - [brew](/apple-brew.md)
 - [finder](/apple-finder.md)
-- [MacOs](/apple-os.md)
 
 ## Send cli output to the clipboard
 ```
