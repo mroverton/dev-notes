@@ -18,8 +18,29 @@ pbcopy < ~/.ssh/id_rsa.pub
 ```
 ps auxww
 
-# Full listing prep
+# Full listing grep
 pgrep -al search-string
+```
+
+# Apple MacOS Notes
+
+```
+sw_vers -productVersion
+```
+
+
+## DNS flush
+```
+# apple
+sudo killall -HUP mDNSResponder
+sudo killall mDNSResponderHelper
+sudo dscacheutil -flushcache
+```
+
+### See dns detail
+
+```
+scutil --dns
 ```
 
 ### Development

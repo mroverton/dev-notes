@@ -7,9 +7,9 @@ layout: default
 # Cloud Notes
 - [aws](/cloud-aws.md)
 - [terraform](/cloud-terraform.md)
-- [packer](/cloud-packer.md)
 - [ansible](/cloud-ansible.md)
+- [packer](/cloud-packer.md)
 
 ## Links
-- <https://www.hashicorp.com/>
-- <https://cloudcraft.co/>
+- <a href="https://www.hashicorp.com" target="_blank">hashicorp.com</a>
+- <a href="https://cloudcraft.co/" target="_blank">cloudcraft.com</a>
