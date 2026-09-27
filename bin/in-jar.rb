@@ -1,13 +1,11 @@
 #!/usr/bin/env ruby
-MATCH=Regexp.new ARGV[0] || '.*'
+# frozen_string_literal: true
+
+MATCH = Regexp.new(ARGV[0] || '.*')
 Dir['**/*.jar'].each do |jar|
-    # puts jar
-    cmd = ['bash', '-c', 'jar tf "%s" 2>&1' % [jar]]
-    IO.popen cmd do |proc|
+    IO.popen(['jar', 'tf', jar], err: %i[child out]) do |proc|
         proc.each do |line|
-            if m = MATCH.match(line)
-                puts "%s - %s" % [jar, line]
-            end
+            puts "#{jar} - #{line}" if MATCH.match?(line)
         end
     end
 end

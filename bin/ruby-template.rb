@@ -1,26 +1,28 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 # For use with Gemfile and bundler
-require 'rubygems'
 require 'bundler/setup'
 
-require 'aws-sdk'
+require 'aws-sdk-core' # add service gems as needed, e.g. aws-sdk-s3
 require 'optparse' # command line option parser
-require 'ostruct' # struct holding parsed options
-require 'pp' # pretty printer
+require 'yaml'
 
 class MyClass
+
+    Options = Struct.new(:ok, :quiet, :yes, :profile, :region, :operations)
 
     attr_accessor :options
 
     def parse(args)
-        _opts = OpenStruct.new
-        _opts.ok = false
-        _opts.quiet = false
-        _opts.yes = false
-        _opts.profile = 'default'
-        _opts.region = 'us-west-2'
-        _opts.operations = []
+        _opts = Options.new(
+            ok: false,
+            quiet: false,
+            yes: false,
+            profile: 'default',
+            region: 'us-west-2',
+            operations: []
+        )
 
         opt_parser = OptionParser.new do |o|
             o.banner = 'Description'
@@ -34,11 +36,11 @@ class MyClass
             # -------------------------
             # Amazon options
             o.on('--profile pname', 'AWS profile name') do |profile|
-                _opts.aws_profile = profile
+                _opts.profile = profile
             end
 
             o.on('--region region', 'AWS region') do |region|
-                _opts.aws_region = region
+                _opts.region = region
             end
 
             o.separator ''
@@ -53,7 +55,7 @@ class MyClass
 
             o.on('-h', 'Print this usage') do
                 puts o
-                puts _opts.to_yaml
+                puts dump(_opts)
                 exit
             end
 
@@ -66,15 +68,15 @@ class MyClass
 
         begin
             opt_parser.parse!(args)
-        rescue => exception
-            puts exception
+        rescue OptionParser::ParseError => e
+            puts e
             puts opt_parser
             exit 1
         end
 
         if _opts.operations.empty?
-            STDOUT.puts opt_parser
-            puts _opts.to_yaml
+            puts opt_parser
+            puts dump(_opts)
             exit 0
         end
 
@@ -85,10 +87,14 @@ class MyClass
     def main(args)
         puts "args: #{args}"
         self.options = parse(args)
-        puts "options: #{options.keys}"
+        puts "options: #{options.members}"
         options.operations.each do |cmd|
             cmd&.call
         end
+    end
+
+    def dump(opts)
+        opts.to_h.except(:operations).transform_keys(&:to_s).to_yaml
     end
 
     def do_list

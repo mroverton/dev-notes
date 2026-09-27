@@ -1,24 +1,19 @@
 #!/usr/bin/env ruby
-
+# frozen_string_literal: true
 
 def usage
-  puts "
-    #{$0} file
+  puts <<~USAGE
+
+    #{$PROGRAM_NAME} file
 
     Processes the output of mvn versions:display-dependency-updates
 
-  "
+  USAGE
   exit 1
 end
 
-unless ARGV[0]
-  usage
-end
+usage unless ARGV[0]
 
-
-File.open(ARGV[0]) do |f|
-  data = f.read
-  data.gsub! /^\[INFO\]/, ''
-  data.gsub! /\.{3}\n\s+/, ' '
-  puts data
-end
+puts File.read(ARGV[0])
+         .gsub(/^\[INFO\]/, '')
+         .gsub(/\.{3}\n\s+/, ' ')

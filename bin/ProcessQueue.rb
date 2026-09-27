@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-require 'thread'
 
 require_relative 'StringColor'
 
@@ -24,14 +23,12 @@ class ProcessQueue
 
         def initialize(title, cmd, capture_buf = nil)
             unless title.instance_of? String
-                raise 'ProcessQueue::Cmd title must be string'
+                raise ArgumentError, 'ProcessQueue::Cmd title must be string'
             end
             self.title = title
             if capture_buf
                 unless capture_buf.instance_of? CaptureBuffer
-                    msg = 'capture_buf must be of type ProcessQueue::CaptureBuffer'
-                    STDERR.puts msg
-                    throw msg
+                    raise ArgumentError, 'capture_buf must be of type ProcessQueue::CaptureBuffer'
                 end
                 self.capture_buf = capture_buf
             end
@@ -40,13 +37,11 @@ class ProcessQueue
                 self.cmd = [cmd]
             when Array
                 self.cmd = cmd
-                cmd.each do |c|
-                    unless c.instance_of? String
-                        raise 'ProcessQueue::Cmd cmd array items must be strings'
-                    end
+                unless cmd.all?(String)
+                    raise ArgumentError, 'ProcessQueue::Cmd cmd array items must be strings'
                 end
             else
-                raise 'ProcessQueue::Cmd cmd must be string or Array of strings'
+                raise ArgumentError, 'ProcessQueue::Cmd cmd must be string or Array of strings'
             end
         end
     end
@@ -73,11 +68,11 @@ class ProcessQueue
 
     def push(cmd)
         if work_in.closed?
-            STDERR.puts 'ERROR: queue closed'
+            warn 'ERROR: queue closed'
             return
         end
         unless cmd.instance_of? Cmd
-            raise 'Input must be type ProcessQueue::Cmd'
+            raise ArgumentError, 'Input must be type ProcessQueue::Cmd'
         end
         @work_cnt += 1
         if @no_color
@@ -92,14 +87,10 @@ class ProcessQueue
     def wait
         work_in.close
         while workers_running?
-            while not work_out.empty?
-                puts work_out.pop
-            end
+            puts work_out.pop until work_out.empty?
             sleep 0.5
         end
-        while not work_out.empty?
-            puts work_out.pop
-        end
+        puts work_out.pop until work_out.empty?
         result = @success
         reset
         result
@@ -126,23 +117,11 @@ class ProcessQueue
 
     def ensure_workers_running
         start_workers
-        while true
-            if workers_running?
-                break
-            end
-            sleep 1
-        end
+        sleep 1 until workers_running?
     end
 
     def workers_running?
-        res = false
-        worker_list.each do |w|
-            if w.alive?
-                res = true
-                break
-            end
-        end
-        return res
+        worker_list.any?(&:alive?)
     end
 
     def failed
@@ -158,12 +137,8 @@ class ProcessQueue
         while worker_list.length < ([work_in.length, worker_cnt].min)
             worker_list << Thread.new do
                 begin
-                    while true
-                        if work_in.closed? && work_in.empty?
-                            break
-                        end
-                        input1 = work_in.pop # input is array
-                        next unless input1
+                    # pop returns nil once the queue is closed and drained
+                    while (input1 = work_in.pop)
                         # puts "input: #{input1.inspect}"
                         title1 = input1.title
                         cmd1   = ['bash', '-c'] + input1.cmd
@@ -177,12 +152,11 @@ class ProcessQueue
                             work_out.push "DRYRUN: #{cmd1}"
                             next
                         end
-                        IO.popen cmd1, :err => [:child, :out] do |proc|
-                            while s = proc.gets
-                                break unless s
+                        IO.popen cmd1, err: %i[child out] do |proc|
+                            while (s = proc.gets)
                                 input1.capture_buf.add s if input1.capture_buf
                                 if @no_color
-                                    s.gsub! /\e\[\d+m/, ''
+                                    s.gsub!(/\e\[\d+m/, '')
                                 end
                                 if verbose
                                     work_out.push "%s: %s" % [title1, s]
@@ -192,7 +166,7 @@ class ProcessQueue
                                 sleep 0.01 # force a re-schedule
                             end
                         end
-                        unless 0 == $?.exitstatus
+                        unless $?.success?
                             work_out.push "%s: %s" % [title1, 'Process failed']
                             failed
                         end
@@ -201,8 +175,8 @@ class ProcessQueue
                             work_out.push res
                         end
                     end
-                rescue Exception => e
-                    STDERR.puts("ProcessQueue worker error: #{e}")
+                rescue StandardError => e
+                    warn "ProcessQueue worker error: #{e}"
                     raise
                 end
             end

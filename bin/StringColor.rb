@@ -1,4 +1,4 @@
-
+# frozen_string_literal: true
 
 class StringColor
     def self.black(s)  ;"\e[30m#{s}\e[0m"; end
@@ -26,8 +26,8 @@ class StringColor
     def self.reverse_color(s);"\e[7m#{s}\e[27m"; end
 
     def self.colorize(offset, str)
-        off = (offset == 0)? 0: (offset - 1)
-        bold(method(COLORS[ off % COLORS.length ]).call(str))
+        off = offset.zero? ? 0 : offset - 1
+        bold(public_send(COLORS[off % COLORS.length], str))
     end
     COLORS = [
         :green,
