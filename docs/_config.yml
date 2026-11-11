@@ -5,3 +5,7 @@ theme: jekyll-theme-primer
 # jekyll-theme-slate
 # jekyll-theme-minimal
 # jekyll-theme-leap-day
+
+repository: mroverton/dev-notes
+url: "https://mroverton.github.io"
+baseurl: "/dev-notes"
